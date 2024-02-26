@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        select, input, textarea {
+            width: 100%;
+            padding: 5px;
+            margin: 5px 0;
+            display: inline-block;
+            box-sizing: border-box;
+            border: 1px solid #2ecc71; /* Green border */
+        }
+
+        label {
+            margin-top: 10px;
+            display: block;
+        }
+</style>
+<body>
+    <h1>SMIT Admission Form</h1>
+    <form method="post">
+       <fieldset>
+       Select City
+ <select>
+<option value="Karachi" selected="selected">Karachi</option>
+<option value="Karachi">Lahore</option>
+<option value="Karachi">Hyderabad</option>
+</select>
+<label>
+    Select course or event
+    <select>
+        <option value="web and mobile application">Web and mobile application</option>
+        <option value="Graphic">Graphic design</option>
+    </select>
+</label>
+
+<label>Username
+
+<input type="text" name="username"placeholder="username" required/></label>
+<label>fathername
+<input type="text" name="fathername" required />
+</label>
+
+Email
+<label for="email">
+<input type="email" id="email" name="email"></label>
+<label>Phone Number
+<input type="number" name="number"/>
+</label>
+<label>CNIC
+    <input type="number" name="cnic"size="40"maxlength="40"placeholder="CNIC"/></label>
+    <label> Father CNIC
+        <input type="number" name="fathercnic" placeholder="father's CNIC Optional"/>
+    </label>
+    Date: 
+<label><input type="date" name="date"/></label>
+<label>Select Gender
+    <select>
+        <option value="M">Male </option>
+        <option value="f">Female</option>
+    </select>
+</label>
+<label>Address
+<input type="text" name="address"></label>
+<label>
+    Last qualitification
+    <select>
+        <option value="matric">Matric </option>
+        <option value="Intermediate">Intermediate</option>
+    </select>
+</label>
+
+<label>
+    
+    Do you have a laptop
+    <select placeholder="do you have a laptop">
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+    </select>
+</label>
+<label>Upload</label>
+<input type="file" id="file-upload" accept="image/*" onchange="fileupload"; />
+
+
+<p>
+    With white or blue background File shoulde be less than 1Mb <br/>file type:jpg,jpeg,png <br/>Upload your recent passport size picture <br/>your face should be clear without any glasse.
+</p>
+<hr/>
+<ol>
+    <li>I here by solumantly that the data and facts are herein are true and best in my knoeledge.Further, I will abide by all the established and further regulations of 
+   <li> I hereby, solemnly declare that the data and facts mentioned herein are true and correct to the best of my knowledge. Further, I will abide by all the established and future regulations and policies of SWIT</li>
+    <li>I hereby accept the responsibilities of good conduct and guarantee that I will not be involved in any other activity, political or ethical, but learning during my stay in the program.
+    Defiance will render my admission canceled at any point in time.</li>
+    <li>Upon completion, of the course, I will complete the required project by SWIT.</li>
+   <li>It's mandatory for female students to wear abaya/hijab in the class</li> 
+</ol>
+ <!-- Customization for Image Upload -->
+ <label for="file">Upload Passport Size Picture</label>
+ <input type="file" name="file" id="file" accept="image/*" />
+<input type="submit" value="submit">
+
+       </fieldset>
+    </form>
+
+</body>
+</html>
